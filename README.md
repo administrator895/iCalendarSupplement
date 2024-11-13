@@ -8,4 +8,5 @@
 - [只包含 "上述添加的节日"](https://raw.githubusercontent.com/administrator418/iCalendarSupplement/main/custom_ics/apple_supplement.ics)
 - [整合了原本 "苹果中国大陆节假日" 和 "上述添加的节日"](https://raw.githubusercontent.com/administrator418/iCalendarSupplement/main/custom_ics/apple_supplement_with_original.ics)
 
-**最后更新时间:**<bar>2024-11-13
+**最后更新时间:**  
+2024-11-13
