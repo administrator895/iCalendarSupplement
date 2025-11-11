@@ -13,4 +13,4 @@
 - [整合了原本 "苹果中国大陆节假日" 和 "上述添加的节日"](https://raw.githubusercontent.com/administrator895/iCalendarSupplement/main/custom_ics/apple_supplement_with_original.ics)
 
 **更新时间:**  
-2025-10-10
+2025-11-11
