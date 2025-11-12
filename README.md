@@ -21,4 +21,4 @@
     **gitee**: https://gitee.com/administrator895/iCalendarSupplement/raw/main/custom_ics/apple_supplement_with_original.ics
 
 **更新时间:**  
-2025-11-11
+2025-11-12
