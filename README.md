@@ -21,4 +21,4 @@
     **gitee**: https://gitee.com/administrator895/iCalendarSupplement/raw/main/custom_ics/apple_supplement_with_original.ics
 
 **自动更新:**  
-GitHub Actions 每周一北京时间 08:00 自动运行更新。
+GitHub Actions 每月 1 号北京时间 08:00 自动运行更新。
