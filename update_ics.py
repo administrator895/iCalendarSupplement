@@ -1,5 +1,6 @@
 from datetime import date
 import hashlib
+from pathlib import Path
 import re
 
 import requests
@@ -7,10 +8,12 @@ from icalendar import Calendar, Event, prop
 from lunarcalendar import Converter, Lunar
 
 
-APPLE_CN_ICS_PATH = "source_ics/apple_cn.ics"
-APPLE_US_ICS_PATH = "source_ics/apple_us.ics"
-CUSTOM_ICS_PATH = "custom_ics/apple_supplement.ics"
-CUSTOM_ICS_PATH_WITH_ORIGINAL = "custom_ics/apple_supplement_with_original.ics"
+BASE_DIR = Path(__file__).resolve().parent
+
+APPLE_CN_ICS_PATH = BASE_DIR / "source_ics/apple_cn.ics"
+APPLE_US_ICS_PATH = BASE_DIR / "source_ics/apple_us.ics"
+CUSTOM_ICS_PATH = BASE_DIR / "custom_ics/apple_supplement.ics"
+CUSTOM_ICS_PATH_WITH_ORIGINAL = BASE_DIR / "custom_ics/apple_supplement_with_original.ics"
 
 APPLE_CALENDAR_CN_URL = "https://calendars.icloud.com/holidays/cn_zh.ics"
 APPLE_CALENDAR_US_URL = "https://calendars.icloud.com/holidays/us_en-us.ics"
@@ -38,6 +41,7 @@ def download_calendar(url, path):
     response = requests.get(url, timeout=30)
     response.raise_for_status()
 
+    path.parent.mkdir(parents=True, exist_ok=True)
     with open(path, "w", encoding="utf-8") as file:
         file.write(response.text)
 
@@ -144,6 +148,7 @@ def normalize_ical(ical_string):
 
 def write_calendar(calendar, path):
     ical_string = normalize_ical(calendar.to_ical().decode("utf-8"))
+    path.parent.mkdir(parents=True, exist_ok=True)
     with open(path, "wb") as file:
         file.write(ical_string.encode("utf-8"))
 
