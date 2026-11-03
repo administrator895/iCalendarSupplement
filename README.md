@@ -14,6 +14,7 @@
     **github**: https://raw.githubusercontent.com/administrator895/iCalendarSupplement/main/custom_ics/apple_supplement.ics
 
     **gitee**: https://gitee.com/administrator895/iCalendarSupplement/raw/main/custom_ics/apple_supplement.ics
+
 - 整合了原本 "苹果中国大陆节假日" 和 "上述添加的节日": 
 
     **github**: https://raw.githubusercontent.com/administrator895/iCalendarSupplement/main/custom_ics/apple_supplement_with_original.ics
